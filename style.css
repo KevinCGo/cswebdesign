@@ -1,0 +1,284 @@
+/* Body */
+/* 
+Body 
+1. The background for the entire body has a color of white. ✓
+*/
+
+body {
+  background-color: white;
+}
+
+/* Wrapper */
+/* 
+Wrapper 
+1. The wrapper is the part of the page that contains the content. ✓
+2. It has a background color of white and a width of 1200 pixels. ✓
+*/
+
+div {
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+/* Header */
+/* 
+Header 
+1. The image should be floated to the left with a blue border underneath. ✓
+2. The top should have 12 pixels of padding. ✓
+*/
+
+.header {
+  color:  blue ; 
+  font-family: Verdana;
+  padding-top: 12px;
+  padding-left: 10%;
+  padding-right: 5%;
+  border-bottom: 2px blue;
+  float: right;
+  text-align-last: right;
+  font-size: small;
+  margin: 0 auto;
+}
+
+/* Nav bar - dark blue when hovering */
+.header a:hover {
+  color: darkblue;
+}
+
+/* BOOKS Dropdown */
+/*
+Navigation bar 
+1. The navigation links are blue and change to dark blue when hovering. ✓
+2. They are floated to the right of the header image. ✓
+3. The second navigation link has a sub navigation menu that contains the books. ✓
+4. This menu uses the same colors as the parent, but the links go down instead of across. ✓
+*/
+
+.dropdown {
+  position: relative;
+  display: inline-block; 
+  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 10px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: blue;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block; 
+}
+a {
+  position: relative;
+  text-decoration: none;
+}
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+}
+
+/* Book lines in index.html */
+
+.bookdesc1 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 160px;
+}
+.bookdesc2 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 210px;
+}
+.bookdesc3 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 210px;
+}
+.bookdesc4 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 180px;
+}
+/*Books - Footer line*/
+.bookdesc5 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 260px;
+}
+/*Contact Me - Footer line*/
+.bookdesc6 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 50px;
+}
+/*About Me - Footer line*/
+.bookdesc7 {
+  font-size: 90%;
+  border-bottom: solid blue 1px;
+  padding-bottom: 10px;
+}
+
+/* Dropdown content-books */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Line below the logo - header */
+  
+.logoheader {
+  border-bottom: solid blue 1px;
+}
+
+/* Main content */
+/* 
+Main 
+1. The main content section is inside the wrapper and should have a white background color as well as being floated to the left. ✓
+2. The font is Geneva and the font size is 1.125em. ✓
+3. The line height is 1.45. Set the text to justify so that it evenly expands across the page. ✓
+4. The hyperlinks should be blue and underline when hovering. ✓
+*/
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+/*Font is in Geneva*/
+
+p {
+  font-family: Geneva, Verdana, Tahoma, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.45;
+  text-align: justify;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*Image text*/
+/*
+Image Text Area 
+1. This area should have a font of Georgia and a width of about 800 pixels. ✓
+2. Make the text justify. ✓
+*/
+
+/*Font is in Georgia*/
+.imagetext {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 800px;
+  padding-left: 20%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-align: justify;
+}
+
+/* Submit button */
+
+[type="submit"] {
+  background-color: lightblue;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  border-style: 5px black;
+}
+[type="submit"]:hover {
+  background-color: blue;
+  color: lightblue;
+  font-size: large;
+  font-weight: bold;
+  border-style: 5px black;
+}
+
+/* Book Details */
+/*
+ Book Details Section 
+1. This section contains the details for each book. ✓
+2. The background color is beige and the border is brown with 1 pixel in width. ✓
+3. The corners should be rounded by 10 pixels. ✓
+4. The text font is courier new. The heading is h4. ✓
+*/
+ .bookdetails {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+  border: 1px solid brown;
+  background-color: beige;
+  padding: 10px;
+
+}
+.section {
+  float: left;
+  width: 1040px;
+}
+
+/*Form*/
+fieldset { 
+  display: inline-block;
+  margin-left: 1px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  width: 1100px;
+  border: 1px;
+  background-color:white;
+  border-color: lightgray; 
+  border-style: solid
+}
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  margin: 0px;
+  padding:0px;
+  font-size: 90%;
+}         
+.linked-icon, .facebook-icon, .linkedin-icon, .pinterest-icon, .twitter-icon {
+  margin-top: .625em;
+  width: 60px;
+  height: 60px;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  border-radius: 25px;
+  padding: .5em;
+}
+  
+.footer-nav p {
+  text-align: center;
+}
+  /*Social Media Icons*/
+.social-wrapper {
+  text-align: center;
+}
+.social-wrapper ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+  /* Hyperlink style */
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+a:active {
+  text-decoration: underline;
+}

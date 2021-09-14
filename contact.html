@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Go's Favorite Books</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--Header [Check]-->
+    <div class="header">
+        <a href="index.html">HOME</a>                          
+        <div class="dropdown">
+            <a href="news.asp">BOOKS</a>
+            <div class="dropdown-content">
+                <a href="C-Programming-Language.html">THE C PROGRAMMING LANGUAGE</a>
+                <a href="Database-Systems.html">DATABASE SYSTEMS</a>
+                <a href="HTML-and-CSS.html">HTML AND CSS</a>
+                <a href="Java-Programming.html">JAVA PROGRAMMING</a>
+            </div>
+        </div>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+<div class="logoheader" style="clear: left;">
+         <!--Logo in very left [Resize logo]-->
+<img src="img/logo.gif" alt="logo">
+</div>
+<div> <!--Title of page for contact.html [Check]-->
+    <h1 style="text-align:center">Contact Me</h1style>
+</div>
+<div> <!--Information requested by users. [Check]-->
+    <p style="color: red">Please fill out all of the fields </p>
+    <p>Please fill free to contact me with questions or comments. All fields below are required so that I am able to properly respond back.</p>     
+    <!--Fill-out form [Check]-->        
+</div>
+
+<div class="container">
+    <form action="action_page.php">
+        <fieldset>
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+        </div>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="youremail@example.com">
+        </div>
+        <div>
+            <label for="tphone">Telephone:</label>
+            <input type="text" id="tphone" name="telephone" placeholder="(###)###-####">
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="subject" name="message" placeholder="Questions/Comments" cols="40"
+            style="height:200px"></textarea>
+        </div>
+        <div>
+            <label>Contact:</label>
+            <input type="radio" id="businessRadio" name="contact" value="business" />
+            <label for="businessRadio">Business</label>
+            <input type="radio" id="individualRadio" name="contact" value="individual" />
+            <label for="individualRadio">Individual</label>
+        </div>
+    <input type="submit" value="Submit">
+</div>
+</fieldset>
+</form>
+<div style="clear: left;"></div>
+<div class="bookdesc6"></div>
+     <!-- Footer -->
+     <div class="footer">
+        <footer class="site-footer" role="contentinfo">
+            <div class="social-wrapper"><ul>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank"><img src="img/facebook-icon.png"
+                    alt="Facebook Logo" class="facebook-icon"><i class="fa fa-facebook"></i></a></li>
+                <li>
+                    <a href="https://twitter.com" target="_blank"><img src="img/twitter-icon.png" alt="Twitter Logo" 
+                    class="twitter-icon"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin-icon.png"
+                    alt="Linkedin Logo" class="linkedin-icon"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="img/pinterest-icon.png"
+                    alt="Pinterest Logo" class="pinterest-icon"><i class="fa fa-pinterest"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="index.html" style="border-right: solid 1px; padding-right: .5em;">Home</a>
+                </li>
+                <li><a href="about.html" style="border-right: solid 1px; padding-right: .5em;">About</a>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="C-Programming-Language.html" style="border-right: solid 1px; padding-right: .5em;">The C Programming Language</a>
+                </li>
+                <li><a href="Database-Systems.html" style="border-right: solid 1px; padding-right: .5em;">Database Systems</a>
+                </li>
+                <li><a href="HTML-and-CSS.html" style="border-right: solid 1px; padding-right: .5em;">HTML and CSS</a>
+                </li>
+                <li><a href="Java-Programming.html">Java Programming</a>
+                </li>
+            </ul>         
+                </div>
+                <nav class="footer-nav" role="navigation">
+                    <p style="color: dimgrey;"><small>&copy; Copyright 2021 by Kevin Go. All Rights Reserved</small></p>
+                </nav>      
+            </footer>
+        </div>
+        </body>
+        </html>
